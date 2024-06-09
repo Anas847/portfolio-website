@@ -1,0 +1,141 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+background-color: #1f242d; 
+color: white;
+font-family: sans-serif;
+}
+
+.header {
+    
+    padding: 30px 20px;
+    width: 100%;    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+
+    font-size: 30px;
+    text-decoration: none;
+    margin-left: 10%;
+    
+}
+.navbar a {
+    font-size: 15px;
+    margin: 0px 20px;
+    text-decoration: none;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #0ef;
+    
+}
+.main{
+display: flex;
+flex-direction: column;
+
+align-items: center;
+}
+h2 span{
+color: #0ef;
+}
+.name{
+    margin-top: 15px;
+}
+.name input{
+width: 350px;
+height: 30px;
+outline: none;
+border: 1px solid #0ef;
+border-radius: 15px;
+padding: 10px;
+}
+.email{
+    margin-top: 15px;
+}
+.email input{
+width: 350px;
+height: 30px;
+outline: none;
+border: 1px solid #0ef;
+border-radius: 15px;
+padding: 10px;
+
+}
+
+.message{
+margin-top: 15px;
+
+}
+.message textarea{
+width: 350px;
+outline: none;
+border: 1px solid #0ef;
+border-radius: 15px;
+padding: 10px;
+
+}
+.btn{
+    margin-top: 25px;
+    width: 100px;
+    padding: 5px;
+    border-radius: 15px;
+    border: 1px solid #0ef;
+    color: #0ef;
+    transition: 0.3s;
+
+}
+
+
+.btn:hover {
+    color: black;
+    background: #0ef;
+box-shadow:0 0 5px #0ef;
+box-shadow:0 0 20px #0ef;
+box-shadow:0 0 70px #0ef;
+box-shadow:0 0 140px #0ef;
+}
+.menu-icon {
+    display: none;
+}
+
+.menu-icon i {
+    color: #0ef;
+    font-size: 25px;
+
+}
+
+
+    
+@media screen and (min-width:320px) and (max-width:540px){
+
+    .navbar {
+        display: none;
+    }
+
+    .menu-icon {
+        display: inline;
+    }
+    .name input,.email input{
+        width: 260px;
+
+    }
+    
+    .message textarea{
+height: 275px;
+width: 265px;
+    }
+
+
+
+
+
+
+
+}
+
